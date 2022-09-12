@@ -1,0 +1,17 @@
+let firstName = "";
+let lastName = "";
+let nickName = "JCSS";
+console.log( firstName || lastName || nickName || "Anonymous");
+console.log( firstName || lastName || nickName && "Anonymous");
+
+firstName || lastName || nickName || "Anonymous" returns "JCSS" because it evaluates the statement from left
+to right until it reaches a true value. Because firstName and lastName are falsy values, the first truthy
+value is nickName so nickName is returned.
+
+firstName || lastName || nickName && "Anonymous" returns "Anonymous" because the ||'s are evaluated left to
+right, but the && is evaluated first. The && takes the last truthy value because it evaluates to true
+causing the value of the && to be "Anonymous". The equation can now be rewritten as:
+
+firstName || lastName || "Anonymous" 
+
+The first truthy value from this equation is "Anonymous" and that is reutrned.

@@ -1,0 +1,2 @@
+The name is printed because the attribute is defined for the child. The heritage is inherited from the parent object
+so the child has that value available to use. The hieght was not defined for the parent or child so the value is undefined.

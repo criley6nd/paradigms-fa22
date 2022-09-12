@@ -1,0 +1,4 @@
+It is becuase the first one uses the value of the string and compares it to the number 0 making it true. 
+The second one uses the truthiness of the list with the truthiness of zero to give them both the value false.
+The third one uses the truthiness of both the string and the set. The string equates to true because it has length
+while the list equates to false because it is empty.

@@ -1,0 +1,3 @@
+It prints undefined because the variable is declared with 'let' instead of 'var' in the else statement.
+When the varibale is declared with 'let', it is scoped to the block it is in, in this case the else block.
+When it is returned, the variable has been deallocated so it returns undefined.
