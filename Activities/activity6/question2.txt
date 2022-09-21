@@ -1,0 +1,12 @@
+For the coffee script code, all the variables are declared with var when transpiled. Therefore the a and b outside 
+the function have global scope and the ones inside the function have function scope. 
+
+var a = 0; // global scope
+let c = 2; // block scope
+myFunction = () => {
+     var a = 100;	// function scope
+     b = 200;		// function scope
+     var d = 300; 	// function scope
+     let e = 400; 	// block scope
+}
+

@@ -1,0 +1,3 @@
+The first one is a higher order function because it returns a function to check whether a number is greater 
+than the input number. While this is an arrow function, it is still a function. The second one is not a higher 
+order function because it returns the result of the function, not a function definition. 

@@ -1,0 +1,4 @@
+Compile means to take the code and put it into machine code. This is what a C compiler does by converting the C code into 
+an executable. Transpiling is taking code from one human readable language to another human readable langauge. In the 
+example we are looking at, coffeescript is translated to javascript which is then translated to machine code. It is 
+like a middle step.

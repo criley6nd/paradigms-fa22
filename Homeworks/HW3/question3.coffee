@@ -1,3 +1,4 @@
 matchHouses = (step) -> 
-    # Your function implementation here
-    return # a Number
+    return (step * 5) + 1
+
+console.log(matchHouses(12))

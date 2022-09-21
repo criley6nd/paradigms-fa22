@@ -1,0 +1,4 @@
+The output is 10. This is because in the scope f3 is declared, the scope of f1, x is 10. When the function is called,
+the value of x is 6 because it is redeclared in the scope of f2. This is the difference between deep and shallow binding.
+Because javascript is deeply bound, x retains its value from when f3 was declared and 10 is output. If it was shallow bound,
+x would be 6 because it is 6 when the function is called.

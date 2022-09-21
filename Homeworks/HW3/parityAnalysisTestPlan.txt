@@ -1,0 +1,29 @@
+Test Case 1:
+Check a normal multi digit input returning true
+
+- Input: 223
+- Output: true
+
+Test Case 2:
+Check a normal multi digit input returning false
+
+- Input: 123
+- Output: false 
+
+Test Case 3:
+single digit number
+
+- Input: 5
+- Output: true
+
+Test Case 4:
+negative number
+
+- Input: -25
+- Output: true
+
+Test Case 5:
+Test edge case of 0
+
+- Input: 0 2
+- Output: true
