@@ -1,4 +1,7 @@
-[a, b, c] = [1, 2, 3]
+a = 1
+b = 2
+c = 3
+
 bad = ->
   a = 10            # clobbers outer a
 okay = ->
@@ -8,6 +11,8 @@ better = ->
 
 
 
-bad(); okay(); better();
-assert = require 'assert'
-assert.deepStrictEqual([a,b,c], [10,2,3])
+bad()
+okay()
+better()
+
+console.log [a,b,c] # [10,2,3]

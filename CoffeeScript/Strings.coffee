@@ -1,11 +1,10 @@
-example =
-  multi: "This is
+multi= "This is
     really a one line
     string"
-  block: """
+block= """
 One Two
       TwoPointFive
     Three
 """
-console.log example.multi
-console.log example.block
+console.log multi
+console.log block
