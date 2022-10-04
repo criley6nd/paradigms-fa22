@@ -1,0 +1,3 @@
+When using the -> arrow in a class, the function doesn't carry the object paramaters through
+you need to use a => arrow when defining a function to carry the obejct variables through to 
+the function. 

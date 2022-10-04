@@ -1,0 +1,20 @@
+Array comprehension is a way to perform operations on arrays in simpler ways than a standard for loop.
+When given an array of NFL players, array comprehension can be used to filter the array for players on a certain
+team. 
+code:
+
+```
+players = [
+    {name: 'DK'
+    team: 'seattle'},
+    {name: 'Geno'
+    team: 'seattle'},
+    {name: 'Russel'
+    team: 'denver'},
+]
+
+seahawks = (p.name for p in players when p.team == 'seattle')
+
+for player in seahawks
+    console.log player
+```
