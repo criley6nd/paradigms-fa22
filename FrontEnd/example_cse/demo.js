@@ -1,5 +1,3 @@
-
-
 // Q1: Use DOM to change the H1 element to “Computer Science and Engineering Faculty”
 let headings = document.getElementsByTagName("h1");
 headings[0].innerText = "<a href='https://www.example.com'>Computer Science and Engineering Faculty</a>";
