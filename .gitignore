@@ -5,6 +5,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Compiled Java code
+*.class
+
 # C extensions
 *.so
 

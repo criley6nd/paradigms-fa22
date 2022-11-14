@@ -1,7 +1,7 @@
 public class Student{
 
     private String name;
-    private String  grades [];
+    private String [] grades ;
 
     /**
      * Parameterized constructor
