@@ -1,0 +1,5 @@
+The css needs to be loaded in before the page is rendered to take effect so it is important to call
+it in the header before any of the page is rendered. Putting the js at the end allows you to run 
+functions on the entirety of the page. If it were in the middle, all elements may not be rendered
+yet so some elements that were meant to be changed do not get chenged. The js can only make changes
+to rendered sections of the page.

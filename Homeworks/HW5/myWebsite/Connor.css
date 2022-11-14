@@ -1,0 +1,36 @@
+html {
+    background-color: rgb(15, 114, 228);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main {
+    background-color: white;
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+#playerimg {
+    max-height: 300px;
+}
+
+h1 {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+a {
+    color: rgb(214, 214, 214);
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgb(0, 102, 255);
+    padding: 3px;
+}
+
+.header {
+    background-color: navy;
+    padding: 40px;
+    border-radius: 6px;
+    color: rgb(214, 214, 214);
+}

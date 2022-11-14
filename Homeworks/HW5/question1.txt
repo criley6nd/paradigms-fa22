@@ -1,0 +1,5 @@
+The regular script tag is run in the order that it is in the html. If it is placed before an element
+it will be run to completion before the next element is rendered. Asyc scripts start running in the
+order they are placed, but they are run asynchronously so the page continues to render while the 
+async stricpt runs in the background. Defer scripts run after the entire page is rendered regaurdless of
+where they are placed.
