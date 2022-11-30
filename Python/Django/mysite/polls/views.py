@@ -14,6 +14,17 @@ class IndexView(ListView):
         return Question.objects.order_by('-pub_date')[:5]
 
 
+class ViewByYear(ListView):
+    template_name = 'polls/view_by_year.html'
+    context_object_name = 'latest_question_list'
+
+    def get_queryset(self, *args, **kwargs):
+        """Return the published questions in a specific year."""
+        year = self.kwargs.get('year') # slug from URL (see urls.py)
+        # filter by year, sorts by pub_date (descending), question_text (ascending)
+        return Question.objects.filter(pub_date__year=year).order_by('-pub_date','question_text')
+
+
 class QuestionDetailView(DetailView):
     model = Question
     template_name = 'polls/detail.html'

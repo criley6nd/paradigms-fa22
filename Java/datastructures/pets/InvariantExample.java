@@ -2,32 +2,7 @@ package datastructures.pets;
 import java.util.HashSet;
 import java.util.Set;
 
-abstract class Pet{
-	String name;
-	Pet(String name){
-		this.name = name;
-	}
-	public abstract void speak();
-}
 
-class Cat extends Pet {
-	Cat(String name){
-		super(name);
-	}
-	@Override
-	public void speak() {
-		System.out.println("meow");
-	}
-}
-class Dog extends Pet {
-	Dog(String name){
-		super(name);
-	}
-	@Override
-	public void speak() {
-		System.out.println("au");
-	}
-}
 
 public class InvariantExample {
 
@@ -43,6 +18,7 @@ public class InvariantExample {
 		s2.add(cat); // can add a Cat object because the collection is <Pet>
 					 // Pet is a parent of the Cat Type
 		s3.add(cat); // can add a Cat object because the collection is <Cat>
+
 
 		// Declaring a data structure using <? extends Pet> 
 		// makes it possible to assign to it any DS 

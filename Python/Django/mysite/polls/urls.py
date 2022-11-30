@@ -7,6 +7,8 @@ app_name = 'polls'  # creates a namespace for this application
 urlpatterns = [
     # ex: /polls/
     path('', views.IndexView.as_view(), name='index'),
+    # ex: /polls/
+    path('year/<int:year>/', views.ViewByYear.as_view(), name='index'),
     # ex: /polls/5/
     path('<int:pk>/', views.QuestionDetailView.as_view(), name='detail'),
     # ex: /polls/5/results/
