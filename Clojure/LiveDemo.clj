@@ -5,5 +5,14 @@
 ;;             if a * a + b * b == c * c: 
 ;;                 print('{}, {}, {}'.format(a,b,c)) 
 
-(doseq [c (range 1 41) b (range 1 c) a (range 1 b)] ())
-(range 1 41)
+;;  doseq syntax:
+;;  (doseq [bindings] (body))
+
+(doseq 
+	[c (range 1 41) b (range 1 c) a (range 1 b)] 
+	(if (= (+ (* a a) (* b b)) (* c c))
+		(printf "%d %d %d\n" a b c))
+)
+
+;; (if (expression) (body))
+
